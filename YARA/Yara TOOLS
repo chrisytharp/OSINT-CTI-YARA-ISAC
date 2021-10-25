@@ -9,4 +9,12 @@ YARA TOOLS
                 Online Yara Feed
                 
 YAYA (Yet Another Yara Automaton)
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+LOKI & THOR(Lite)       Available on Linux & Windows
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Loki already has a set of Yara rules
+            1- cd loki
+            2- python loki.py -h                <-to see what options are available
+            3- python loki.py --update          <-will update signature-base directory, which Loki uses to scan for known evil. 
+            4- cd signature-base                <- contains drs:  iocs  miscs  yara
+            5- ./loki.py -p .                   <- (-p) followed what path to scan 
