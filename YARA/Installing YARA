@@ -1,0 +1,38 @@
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+Linux
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+To install Yara on Linux you have two options:
+  1: Installing Through Package Manager (Recommended):
+        Updating package manager && Installing Yara:
+                                                         sudo apt update -y && sudo apt upgrade -y
+                                                         sudo apt install yara
+
+  2: Installing From Source
+      1-
+                              sudo apt update -y && sudo apt upgrade -y
+                              sudo apt install automake libtool make gcc flex bison libssl-dev libjansson-dev libmagic-dev pkg-config
+         
+      2- Downloading the latest release
+                                            wget https://github.com/VirusTotal/yara/archive/v4.0.2.tar.gz
+      3- Extract v4.0.2.tar.gz
+                                            tar -zxvf v4.0.2.tar.gz
+      4- Compile & Install
+                                            cd yara-4.0.2
+                                            chmod +x configure
+                                            ./configure
+                                            chmod +x bootstrap.sh
+                                            ./bootstrap.sh
+                                            make
+                                            sudo make install
+                                            cd yara-4.0.2
+                                            chmod +x configure
+                                            ./configure
+                                            chmod +x bootstrap.sh
+                                            ./bootstrap.sh
+                                            make
+                                            sudo make install
+Installing Yara: Windows
+    1- Download latest binaries (zip files) from their GitHub page
+        https://github.com/VirusTotal/yara
+    2- Run the executable/binary
+      
