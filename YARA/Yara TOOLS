@@ -12,6 +12,12 @@ YAYA (Yet Another Yara Automaton)
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 LOKI & THOR(Lite)       Available on Linux & Windows
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Install 
+            1- git clone https://github.com/Neo23x0/Loki
+            2- cd loki
+            3- pip install -r requirements.txt
+            4- chmod +x loki.py
+
 Loki already has a set of Yara rules
             1- cd loki
             2- python loki.py -h                <-to see what options are available
