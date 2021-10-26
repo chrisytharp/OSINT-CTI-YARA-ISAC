@@ -43,9 +43,6 @@ Below is a list of ISACs that can help a blue team:
 	ThreatConnect
 	MISP
 
-other?:
-	procmon + pcap (into procdot) gives you a map pplop visual
-
 Diamond Model is an approach to conducting intelligence on network intrusion events. The model gets its name (and shape) from the four core interconnected elements that 
 comprise any event – adversary, infrastructure, capability, and victim
 
