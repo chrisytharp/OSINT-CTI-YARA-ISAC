@@ -1,1 +1,27 @@
 AlienVault OTX from AT&T Cybersecurity
+AlienVault OTX from AT&T Cybersecurity is one of the main ISACs that is used as an exchange for community maintained threat intelligence.
+
+You will need to create an AlienVault account before you can fully use the application. Go to https://otx.alienvault.com/ and create an account before continuing.
+
+
+
+Alienvault uses 'Pulses' to create trackers for various categories. Pulses can be categorized by Malware type, APT or group, and targeted industry. All pulses are
+community-created excluding official pulses from AlienVault. 
+
+Pulses can include a wide variety of IOCs such as File Hashes (MD5, SHA1), IPv4, IPv6, Domain, URL, YARA, CVE, and more. 
+
+
+
+
+
+The main page of OTX you will use is the Dashboard. The default dashboard includes a visualization of the most common active malware broken down by category as well 
+as a list of Subscribed Pulses. By default, only AlienVault's Subscribed Pulses will be listed. This can be expanded upon later.
+
+There are also six different tabs that you can navigate to on the navigation bar, they are outlined below.
+
+Dashboard - This is shown above in the screenshot above. It's the main page of OTX and will provide a brief overview of important intel.
+Browse - This will allow you to see all new pulses and sort by various categories to find the newest intel.
+Scan Endpoints - This is an automated service called OTX Endpoint Security that will scan endpoints for indicators.
+Create Pulse - This will allow you to create your own pulses and contribute to the threat exchange.
+Submit Sample - This allows you to submit a malware sample or URL sample which OTX will analyze and generate a report based on the provided sample.
+API Integration - Allows synchronization of the threat exchange with other tools for monitoring your environment.
