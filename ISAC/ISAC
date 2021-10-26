@@ -1,1 +1,7 @@
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ISAC  "Information Sharing and Analysis Center"
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Information Sharing and Analysis Centers (ISACs), are used to share and exchange various Indicators of Compromise (IOCs) to obtain threat intelligence. IOCs can include MD5s,
+IPs, YARA rules, and more. There are many ISACs that can be used to gather threat intelligence including AlienVault OTX, Threat Connect, and MISP.
+
+
