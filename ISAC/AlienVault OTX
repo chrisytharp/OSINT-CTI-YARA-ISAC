@@ -18,3 +18,7 @@ Scan Endpoints - This is an automated service called OTX Endpoint Security that 
 Create Pulse - This will allow you to create your own pulses and contribute to the threat exchange.
 Submit Sample - This allows you to submit a malware sample or URL sample which OTX will analyze and generate a report based on the provided sample.
 API Integration - Allows synchronization of the threat exchange with other tools for monitoring your environment.
+
+
+
+
