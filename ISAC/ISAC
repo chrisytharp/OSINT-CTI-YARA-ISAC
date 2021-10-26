@@ -1,7 +1,51 @@
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ISAC  "Information Sharing and Analysis Center"
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Information Sharing and Analysis Centers (ISACs), are used to share and exchange various Indicators of Compromise (IOCs) to obtain threat intelligence. IOCs can include MD5s,
-IPs, YARA rules, and more. There are many ISACs that can be used to gather threat intelligence including AlienVault OTX, Threat Connect, and MISP.
+Information Sharing and Analysis Centers (ISACs)
 
+  Are used to share and exchange various Indicators of Compromise (IOCs) to obtain threat intelligence. IOCs can include MD5s,
+  IPs, YARA rules, and more. There are many ISACs that can be used to gather threat intelligence including AlienVault OTX, Threat Connect, and MISP.
 
+ Before diving in, let's briefly discuss a few terms that you will often hear when dealing with the framework, threat intelligence, etc.
+
+APT is an acronym for Advanced Persistent Threat. This can be considered a team/group (threat group), or even country (nation-state group), that engages in long-term attacks
+against organizations and/or countries. The term 'advanced' can be misleading as it will tend to cause us to believe that each APT group all have some super-weapon, e.i. a 
+zero-day exploit, that they use. That is not the case. As we will see a bit later, the techniques these APT groups use are quite common and can be detected with the right
+implementations in place. You can view FireEye's current list of APT groups here.  
+
+TTP is an acronym for Tactics, Techniques, and Procedures, but what does each of these terms mean?
+
+The Tactic is the adversary's goal or objective.
+The Technique is how the adversary achieves the goal or objective.
+The Procedure is how the technique is executed.
+TI is an acronym for Threat Intelligence. Threat Intelligence is an overarching term for all collected information on adversaries and TTPs. You will also commonly hear
+CTI or Cyber Threat Intelligence which is just another way of saying Threat Intelligence.
+
+IOCs is an acronym for Indicators of Compromise, the indicators for malware and adversary groups. Indicators can include file hashes, IPs, names, etc.
+ 
+Threat Intelligence, also known as TI and Cyber Threat Intelligence also known as, CTI, is used to provide information about the threat landscape specifically adversaries and 
+their TTPs. Typically CTI revolves around APT groups and/or other threats, these can be well-known groups or up and coming new threats.
+
+Data must be analyzed to be considered threat intelligence. Once analyzed and actionable, then it becomes threat intelligence. The data needs context around to become intel.
+
+CTI is a precautionary measure that companies use or contribute to so that other corporations do not get hit with the same attacks. Of course, adversaries change their TTPs 
+all the time so the TI landscape is constantly changing.
+
+Vendors and corporations will sometimes share their collected CTI in what are called ISACs or Information Sharing and Analysis Centers. ISACs collect various indicators of 
+an adversary that other corporations can use as a precaution against adversaries.
+
+If you are not familiar with adversaries and their TTPs I would suggest checking out the following resources.
+
+APT Groups and Operations
+Tryhackme Mitre Room
+FireEye APT Report
+Threat Intelligence is also broken up into three different types.
+
+Strategic
+	Assist senior management make informed decisions specifically about the security budget and strategies.
+
+Tactical
+	Interacts with the TTPs and attack models to identify adversary attack patterns.
+
+Operational
+	Interact with IOCs and how the adversaries operationalize 
