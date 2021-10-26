@@ -49,3 +49,19 @@ Tactical
 
 Operational
 	Interact with IOCs and how the adversaries operationalize 
+According to the National Council of ISACs, "Information Sharing and Analysis Centers (ISACs) are member-driven organizations, delivering all-hazards threat and mitigation
+information to asset owners and operators". ISACs can be community-centered or vendor-specific. ISACs include CTI from threat actors as well as mitigation information in the 
+form of IOCs, YARA rules, etc. ISACs maintain situational awareness by sharing and collaborating to maintain CTI, through a National Council of ISACs.
+
+You can view a list of member ISACs here: https://www.nationalisacs.org/member-isacs.
+
+We will be focusing on ISACs as they pertain to cybersecurity and cyber threat intelligence; however, ISACs can be utilized for more than just cybersecurity.
+
+Below is a list of ISACs that can help a blue team we will only be showcasing a few in this room.
+
+US-CERT
+AlienVault OTX
+ThreatConnect
+MISP
+This room will specifically focus on AlienVault OTX and ThreatConnect; however, there are many more ISACs that can be used to gather threat intelligence. I encourage you 
+to go out and research others on your own to get a good feeling for what you like and what various ISACs can offer.	
