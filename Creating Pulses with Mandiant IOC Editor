@@ -1,0 +1,51 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Creating IOCs Manually
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+A large portion of ISACs are community contributions where contributors take the latest malware samples and create IOCs for them. There are a few tools that can help with 
+the creation of IOCs including strings, winmd5free, and Mandiant IOC Editor. There are also tools that can be used to automate this process like Mandiant Redline however 
+that is out of scope for this room.
+
+To begin collecting indicators from a sample you can gather the MD5 file hash using WinMD5. Simply run WinMD5 and select the file you want to gather from.
+Pactice with the Cerber sample in C:\Users\Jon\Documents\Practice\Practice 1\
+To get another baseline of information we can look at the properties of the file to find other indicators including size, name, date created, etc.
+
+To get our final indicator and probably the most unique we need to run strings on the sample to identify if there are any unusual or unique strings that we can use in the
+IOC. I would advise taking the output into a file to view later.
+
+Syntax: ./strings.exe <path to file> -accepteula > output.txt
+
+You're looking for strings that are human-readable and unique this can include IPs, BTC Addresses, unique function names, etc. You may not always find unique strings 
+right away with some samples. This is where the use of an automated tool like Redline could come in handy as well as for identifying other indicators.
+
+The string below is unique enough that it could be used as an indicator.
+
+Continue looking through the strings output of the Cerber ransomware to find unique strings.
+
+Once you have all of your indicators prepared you can begin creating an IOC with Mandiant IOCe.
+
+1. Create a new IOC by navigating to File > New Indicator.
+
+2. Add in your indicators to the IOC from the Item tab, for more in-depth information on creating IOCs check out the IOCe user guide.                                    
+
+This is an example of an IOC for the Cerber sample. If this was a real investigation you could then upload it to AlienVault OTX or another ISAC.
+
+Creating Pulses from IOCs
+
+Note: Please do not take malware outside of the sandbox or create a pulse on OTX without an actual investigation.
+
+You can navigate to the Create Pulse tab of AlienVault OTX to begin creating a pulse.
+
+AlienVault OTX can automatically extract indicators including MD5, SHA265 hashes, etc. Even though OTX automatically extracts indicators it is still suggested to create
+your own IOCs.
+
+AlienVault OTX also has built-in functionality to take a malware sample under the submit a sample tab and analyze it. This will give back many indicators including MD5
+hashes, SHA256 hashes, and PE anomalies as well as related pulses.
+
+Connecting IOCs with Pulses
+
+Now that we have all of our information on the unknown sample we can look for other pulses on OTX similar to our sample. This is important to gather CTI because adversaries 
+can change their TTPs and in turn change CTI, this is why ISACs are so important to keep up with the ever-changing threat scene.
+
+Let's look at the pulse in the next task for the Cryxos.B Trojan and Cerber Ransomware and see if you can connect the unknown practice sample with the pulses. This specific 
+pulse is part of another malware known as Cryxos.B that is used as a trojan to get the Cerber ransomware onto devices.
+
