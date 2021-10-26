@@ -1,13 +1,14 @@
-Threat Connect Overview
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Threat Connect Overview                                   https://threatconnect.com/
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Threat Connect focuses more on the information and new developments within cybersecurity and the threat landscape and connecting the landscape with indicators. 
+This intelligence helps your team make better-informed decisions on what to prioritize. 
 
-Threat Connect focuses more on the information and new developments within cybersecurity and the threat landscape and connecting the landscape with indicators. This 
-intelligence can help your team make better-informed decisions on what to prioritize. Threat Connect would fall under the tactical type of threat intelligence. 
+There is a free and open-source version of Threat Connect (also a PAID version)
+Threat Connect is a very large platform with many capabilities but we will only be using it to create our threat intel dashboard and gather indicators from
+other ISACs like AlienVault OTX. 
 
-There is a free and open-source version of Threat Connect available but if you were actually using this on a security team you would want to pay for access to the full 
-platform. Threat Connect is a very large platform with many capabilities but we will only be using it to create our threat intel dashboard and gather indicators from
-other ISACs like AlienVault OTX. It is important to have multiple sources for the information or intelligence that you collect.
-
-Sign up for a free ThreatConnect account here.
+It is important to have multiple sources for the information or intelligence that you collect.
 
 Note: Currently ThreatConnect has gone through a new re-branding and seems to no longer offer a free account. I am looking into options for the future.
 
