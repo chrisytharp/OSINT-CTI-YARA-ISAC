@@ -1,2 +1,103 @@
 Pulse Overview
+Pulse Overview
 
+Pulses can consist of a description, tags, indicator types (file hash, Yara, IP, domain, etc.), and threat infrastructure (country of origin). OTX uses pulses as their
+indicators. A majority of pulses are community-created and maintained. You need to keep this in mind when using pulses for threat intelligence as not all pulses are 
+legit or may contain inaccurate information. Always verify and analyze the indicators used before using them for CTI.
+
+
+
+Breaking Down a Pulse
+
+First, we need to understand how to analyze and gather information from a pulse in order to understand how to use OTX's many categories, ways of obtaining threat 
+intelligence, and indicators.
+
+As an example, we will be looking at the Xanthe - Docker aware miner pulse released from the official AlienVault account. You can find it here.
+
+Pulses consist of three main sections: Pulse Description, Indicator Overview, Indicators. We will break down these sections further and identify each component of them.
+
+Pulse Description
+
+The Pulse Description consists of the description itself, references, tags, malware families, and ATT&CK IDs. The three most important parts are the reference section, 
+the description itself, and the ATT&CK IDs. The references can be used to verify the pulse and get further background information on the pulse/indicators. 
+The description can give you a brief overview of what the pulse is for and how it was gathered which can be useful when quickly looking for pulses to use. The ATT&CK 
+IDs can be used to quickly identify what TTPs are being used by the pulse and familiarize yourself with them. For more information about ATT&CK check out Heavenraiza's 
+MITRE room.
+
+
+
+
+Indicator Overview
+
+The Indicator Overview will give you a very brief statistical representation of the indicators within the pulse as well as threat infrastructure. The indicator overview 
+can be useful when looking for a very specific IOC like a file hash or YARA rule, etc.
+
+
+
+From here we can see that the pulse has six different types of indicators as well as four different countries that the pulse is originating from.
+
+Note: A majority of pulses do not have threat infrastructure however it can be useful when analyzing a pulse for CTI.
+
+Indicators 
+
+Indicators are probably the most important section of the entire pulse. It contains all of the indicators and information about them.
+
+
+
+There is a lot of information to break down for each pulse. Look below for more information about each column of the indicators.
+
+Type - The type of indicator (URL, File Hash, IP, Domain, etc.)
+Indicator - The indicator itself
+Added - Date added, pulses can be updated this can be useful to track the pulses history
+Active - Shows, whether the indicator is still seen in the wild and active, can be useful when selecting pulses to use.
+Related Pulses - Shows pulses that share the same indicator, can be useful to cross-check indicators.
+Extra Information (Advanced) - These are the advanced options including Dynamic Analysis, Network Activity, and YARA rules. 
+The Advanced section of indicators can contain the most information and allow you to get a better understanding of what you are dealing with. Not all pulses or 
+indicators will contain any advanced information but it can be very useful when available. Below is an example of a YARA detection and dynamic analysis of a binary
+from a file hash.
+
+
+
+
+
+Finding Pulses based on Malware
+If you want to find pulses only for a specific malware strain you can look for pulses based on malware. This allows you to very quickly find IOCs and rules for a specific 
+strain of malware.
+
+Note: Malware authors are constantly working to change and mitigate indicators and signatures, be aware that indicators change when looking for specific malware indicators.
+
+
+
+
+
+The menu for malware is by far the most detailed including features of the malware, related pulses, process visualization, and file samples if available.
+
+
+
+
+
+OTX will also visualize the processes the malware is running. Overall the malware categories will allow you to quickly identify multiple aspects of malware including 
+processes, features and pulses.
+
+
+Finding Pulses based on Adversaries
+
+To get started with identifying pulses by adversaries you need to have a foundational knowledge of adversaries and their operations. To get an introduction to
+adversarial operations check out the APT Groups and Operations spreadsheet. You can identify pulses based on the adversary group.
+
+Note: Each vendor has its own naming scheme for APTs take note of this when looking for pulses by adversary.
+
+
+
+
+The adversary menu will give you a short description of the group as well as pulses related to that group.
+
+
+Finding Pulses based on Industry
+
+A common vector for adversaries to focus on is the industry of their target, for example, finance, education, aerospace, etc. Adversaries will sometimes target 
+corporations in one specific industry. An example of this is the Ryuk malware being distributed by "one" group targeting financial corporations
+
+
+
+When opening the industry menu you will see a general description as well as any pulses tag / related to the industry.
