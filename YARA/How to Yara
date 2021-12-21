@@ -28,7 +28,7 @@ numbers that can appear contiguously or separated by spaces. Decimal numbers are
    {
        strings:
            $text_string = "foobar" nocase
-
+           $hex_string = { F4 23 [4-6] 62 B4 }
        condition:
            $text_string
    }
